@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+}
+.move{
+    display:none;
+}
+.bye{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.page-title {
+     width:100%;
+     height:10vh;
+     background-color: rgb(114, 180, 250);
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 4vh;
+}
+
+.logo{
+    display: inline-block;
+    width:10%;
+    height:10vh;
+    background-image: url("rb_hacker_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo  a{
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+header{
+    font-size: larger;
+    color:rgb(255, 255, 255);
+    font-style: oblique;
+    margin: auto;
+}
+
+.nav-bar{
+    height:10vh;
+    width:20%;
+    position: relative;
+}
+
+ul{
+    display:flex;
+    width:100%;
+    height:100%;
+    align-items: center;
+    position: absolute;
+}
+
+li{
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    margin:auto;
+}
+
+li::before{
+    content: "";
+    left:0;
+    height:4px;
+    background-color: white;
+    width:0%;
+    transition: 2s;
+    bottom:-2px;
+    position: absolute;
+}
+
+ul li:hover::before {
+    width: 100%;
+    transition: 2s;
+    background-color: rgb(255, 0, 123);
+}
+
+.X{
+    top:0;
+    right:0;
+    position: fixed;
+}
+.apps, .X{
+    display: none;
+}
+main{
+    width:100%;
+    height:70vh;
+    border:1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.adver,.data{
+    width:40%;
+    height:70vh;
+    border:1px solid green;
+    position: relative;
+}
+.ini{
+    top:45%;
+    left:0;
+    position: absolute;
+    z-index: 1;
+}
+.fin{
+    top:45%;
+    right:0;
+    position: absolute;
+    z-index: 1;
+}
+.fir-col{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .close{
+        display: none;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li{
+        font-size: smaller;
+    }
+    .apps{
+        float: right;
+        display: block;
+    }
+    .move{
+        display:none;
+    }
+    .bye{
+        display: block;
+    }
+
+    .small-screen{
+        margin-top: 5vh;
+        display: flex;
+        background-color: rgb(181, 251, 251);
+    }
+    main{
+        flex-direction: column;
+         height: 100vh;
+    }
+    .adver,.data{
+        width:95%;
+        position: relative;
+
+    }
+
+}
