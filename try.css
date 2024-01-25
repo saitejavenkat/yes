@@ -98,7 +98,7 @@ main{
 }
 .adver,.data{
     width:40%;
-    height:70vh;
+    height:70%;
     position: relative;
     border:2px solid #000000;
     border-radius: 20px;
