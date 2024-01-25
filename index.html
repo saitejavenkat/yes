@@ -35,13 +35,80 @@
     <main>
       <div class="adver">
         <div class="ad-bt">
-          <button class="ini"><</button>
-          <button class="fin">></button>
+          <button class="ini" onclick="h()"><</button>
+          <button class="fin" onclick="h1()">></button>
         </div>
         <div class="fir-col"></div>
         <div class="sec-col"></div>
       </div>
-      <div class="data"></div>
+      <div class="data">
+        <form class="signup-info">
+          <div class="first">
+            <label for="first">First name:</label>
+            <input
+              type="text"
+              required=""
+              id="first"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="last">
+            <label for="Last">Last name:</label>
+            <input
+              type="text"
+              required=""
+              id="Last"
+              class="last-name"
+              placeholder="Last-Name"
+            />
+          </div>
+          <div>
+            <label for="user">Username:</label>
+            <input
+              type="text"
+              id="user"
+              class="user-name"
+              required=""
+              placeholder="Create username"
+            />
+          </div>
+          <div>
+            <label for="pass0">Password:</label>
+            <input
+              type="password"
+              id="pass0"
+              required=""
+              placeholder="Create password"
+            />
+          </div>
+          <div>
+            <label for="grad">Gradution:</label>
+            <input
+              type="text"
+              id="grad"
+              placeholder="Enter you Current Study"
+              required=""
+            />
+          </div>
+          <div>
+            <label for="college">College:</label>
+            <input
+              type="text"
+              id="college"
+              placeholder="Enter your College"
+              required=""
+            />
+          </div>
+          <div>
+            <input type="checkbox" required="" />
+            <label class="checker"
+              >Click the box if you agree all the information above is
+              correct.</label
+            >
+          </div>
+          <button>Signup Now</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>
