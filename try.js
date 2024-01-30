@@ -2,8 +2,8 @@ var a=document.querySelector(".apps");
 var c=document.querySelector(".close");
 var b=document.querySelector(".nav-bar");
 var e=document.querySelector(".X");
-var x=document.querySelector(".fir-col");
-var y=document.querySelector(".sec-col");
+var x=document.querySelector(".adver");
+var y=document.querySelector(".adver");
 var bt=document.querySelector(".fin");
 function nav_click()
 {
@@ -21,16 +21,28 @@ function nav_close()
     a.classList.add("bye");
     bt.classList.remove("move");
 }
-
 function h()
 { 
-    x.style.display="block";
-    y.classList.add("move");
+    x.style = `
+    background: url("home.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:2s;
+    background-size: cover;
+`;
+
+
 }
 
 function h1()
 {
-    x.style.display="none";
-    y.classList.remove("move");
+    
+    y.style=`
+    background: url("rb_hacker_logo.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:2s;
+    background-size: cover;
+`;
 }
 
