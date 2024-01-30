@@ -22,7 +22,7 @@ a{
      background-color: rgb(36, 141, 253);
      display: flex;
      justify-content: space-between;
-     position: sticky;
+     position: fixed;
      top:0;
      left:0;
      z-index: 1;
@@ -100,120 +100,106 @@ a{
 .apps, .X{
     display: none;
 }
-.section{
-    display: flex;
-    width: 100%;
-    height: 100vh;
+.main-data{
+    margin-top: 50px;
+    width:100%;
+    height: 420px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    position: relative;
-    }
+
+}
 .adver{
-    height: 360px;
-    width: 40%;
-    border:2px solid #000000;
-    border-radius: 20px;
-    
+    height:360px;
+    width:40%;
+    transition: 0.5s;
+    border:2px solid black;
+    background: url("logobr.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px;
+    background-color: rgb(250, 249, 249);
     position: relative;
 }
-.data{
-    width:50%;
-    height:80vh;
-    transition: 2s;
-    border:none;
-    position: relative;
-}
-.ini{
-    top:45%;
+.adver .ini{
     left:0;
-    padding:2px;
-    position: absolute;
-    z-index: 1;
-}
-.fin{
-    padding:2px;
     top:45%;
+    position: absolute;
+
+}
+.adver .fin{
     right:0;
+    top: 45%;
     position: absolute;
-    z-index: 1;
 }
-.adver .fir-col{
-    position: absolute;
-    width:100%;
-    height:360px;
-    background:url("rb_hacker_logo.png");
-    background-position: center;
-    display: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
+.data-container{
+    width:40%;
+    height:380px;
+    transition: 2s;
 }
-.adver .sec-col{
-    position: absolute;
-    width:100%;
-    height:360px;
-    background:url("home.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-}
-.signup-info{
+.get-details{
     display: flex;
     flex-direction: column;
+    margin: auto;
     align-items: center;
-    justify-content: center;
-}
-.signup-info div{
-    margin-bottom: 4vh;
-}
- .signup-info label{
-    font-size: small;
  }
-.signup-info div input{
-    margin-left: 10px;
-    border:4px ridge rgb(0, 212, 250);
-    border-radius: 10px;
-    height: 20px;
+ 
+ .get-details div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+ }
+ 
+ .get-details div input{
     outline: none;
+    border:4px ridge rgb(120, 235, 251);
     border-top: none;
     border-left: none;
-    padding: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 5px 8px 5px 8px;
  }
-
- label::after{
-    content:"* ";
-    font-size: large;
-    color:red;
+ .get-details div{
+    position: relative;
  }
- .signup-info div::after{
+ .get-details div::after{
     content: "";
-    bottom:-20px;
+    top:26px;
     left:40%;
     position: absolute;
  }
- form button{
-    border:1px solid black;
+
+ label::after{
+    content:"*";
+    color:red;
+ 
+ }
+ .get-details button{
+    margin-top: 10px;
     width:100px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(0, 119, 255);
+    height:40px;
+    background-color: #63a6f8;
     color:white;
-
+    border:2px solid rgb(103, 99, 99);
+    border-radius: 16px;
  }
- .footer-last{
+footer{
+    margin-top:20px;
     width:100%;
-    height:5vh;
-    bottom: 0;
-    background-color: rgb(48, 49, 50);
-    left:0;
- }
- p{
+    height:100%;
+    bottom:0;
+    color:white;
+    padding:auto;
+    background-color: rgb(62, 61, 61);
+}
+p{
     text-align: center;
-    color: white;
- }
-
-
-@media screen and (max-width: 720px){
+    padding:4px;
+}
+@media screen and (max-width: 768px){
     .close{
         display: none;
     }
@@ -237,28 +223,24 @@ a{
        height:100vh;
         background-color: rgb(0, 0, 0);
         z-index: 1;
-
     }
-    .section{
+    .main-data{
+        width: 100%;
+        height:650px;
         flex-direction: column;
-        height:150vh;
-        width:100%;    
+        flex-wrap: nowrap;
     }
     .adver{
-        width:95%;    
-        height:60vh; 
-        margin-bottom: 5px;
+        width:95%;
+        height:250px;
     }
-    .data{
-        width: 100%;  
+    .data-container{
+        width:99%;
+        height:380px;
+
     }
-    .signup-info div{
-        margin-bottom: 3vh;
-    }
-    .footer-last{
-        left:0;
-        bottom:0vh;
-        position: fixed;
+    footer{
+        margin-top: 30px;
     }
 
 }
