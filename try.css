@@ -116,24 +116,45 @@ a{
     width:40%;
     transition: 0.5s;
     border:2px solid black;
-    background: url("logobr.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     border-radius: 15px;
     background-color: rgb(250, 249, 249);
+    cursor: pointer;
     position: relative;
 }
 .adver .ini{
     left:0;
     top:45%;
+    padding:5px;
+    opacity: 0.5;
+    cursor: pointer;
     position: absolute;
 
 }
 .adver .fin{
     right:0;
     top: 45%;
+    padding: 5px;
+    opacity: 0.5;
+    cursor: pointer;
     position: absolute;
+}
+.changing{
+    bottom:20px;
+    left:0;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:20px;
+}
+.fir,.second{
+    height:5px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 128);
+}
+.second{
+    margin-left: 5px;
 }
 .data-container{
     width:40%;
@@ -143,8 +164,9 @@ a{
 .get-details{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
-    align-items: center;
+    align-items: flex-end;
  }
  
  .get-details div{
@@ -179,6 +201,7 @@ a{
  }
  .get-details button{
     margin-top: 10px;
+    margin-right: 20%;
     width:100px;
     height:40px;
     background-color: #63a6f8;
@@ -238,6 +261,12 @@ p{
         width:99%;
         height:380px;
 
+    }
+    .get-details{
+        align-items: center;
+    }
+    .get-details button{
+        margin: auto;
     }
     footer{
         margin-top: 30px;
