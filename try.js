@@ -4,6 +4,7 @@ var b=document.querySelector(".nav-bar");
 var e=document.querySelector(".X");
 var x=document.querySelector(".adver");
 var y=document.querySelector(".adver");
+var z=document.querySelector(".adver");
 var bt=document.querySelector(".fin");
 var adver1=document.querySelector(".fir");
 var adver2=document.querySelector(".second");
@@ -51,7 +52,11 @@ function h()
     count++;
 
 }
-
+function clsadv()
+{
+    let cls=document.querySelector(".new");
+    cls.style.display="none";
+}
 function h1()
 {
     if(count%2!=0){
