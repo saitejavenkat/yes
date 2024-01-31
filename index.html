@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+  <head>
+    <title>Signup</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="rb_hacker_logo.png" />
+    <link rel="stylesheet" href="try.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="try.js" async></script>
+  </head>
+  <body>
+    <div class="page-title">
+      <div class="logo">
+        <a href="#"> </a>
+      </div>
+      <header>Let's do It</header>
+      <nav class="nav-bar">
+        <div class="apps">
+          <button class="material-icons" onclick="nav_click()">menu</button>
+        </div>
+        <ul class="close">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="X">
+          <button class="material-icons X" onclick="nav_close()">close</button>
+        </div>
+      </nav>
+    </div>
+    <div class="new">
+      <span>
+        <button class="material-icons" onclick="clsadv()">close</button>
+      </span>
+    </div>
+    <main>
+      <div class="main-data">
+        <div class="adver" onclick="go()">
+          <div class="bt">
+          <button class="ini" onclick="h()"><</button>
+          <button class="fin" onclick="h1()">></button>
+          <div class="changing">
+            <span class="fir"></span>
+            <span class="second"></span>
+          </div>
+      </div>
+        </div>
+        <div class="data-container">
+          <form class="get-details" role="application">
+            <div class="first">
+              <label for="first">First name:</label>
+              <input type="text" id="first" placeholder="First Name" />
+            </div>
+            <div class="last">
+              <label for="Last">Last name:</label>
+              <input
+                type="text"
+                id="Last"
+                class="last-name"
+                placeholder="Last-Name"
+              />
+            </div>
+            <div>
+              <label for="user">Username:</label>
+              <input
+                type="text"
+                id="user"
+                class="user-name"
+                placeholder="Create username"
+              />
+            </div>
+            <div>
+              <label for="pass0">Password:</label>
+              <input type="password" id="pass0" placeholder="Create password" />
+            </div>
+            <div>
+              <label for="grad">Gradution:</label>
+              <input
+                type="text"
+                id="grad"
+                placeholder="Enter you Current Study"
+              />
+            </div>
+            <div>
+              <label for="college">College:</label>
+              <input
+                type="text"
+                id="college"
+                placeholder="Enter your College"
+              />
+            </div>
+            <button>Create Now</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>All rights are reserved | &copy;2024 | <i>Saiteja</i></p>
+    </footer>
+  </body>
+</html>
