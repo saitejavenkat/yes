@@ -8,7 +8,10 @@ var z=document.querySelector(".adver");
 var bt=document.querySelector(".fin");
 var adver1=document.querySelector(".fir");
 var adver2=document.querySelector(".second");
+var fir=document.querySelector(".new");
+var cls=document.querySelector(".new");
 var count=0;
+var ini=0;
 function nav_click()
 {
     a.classList.add("move");
@@ -43,7 +46,7 @@ function h()
         background: url(""https://3.bp.blogspot.com/-i6GzrUTQXaA/W1tT_huT5FI/AAAAAAAAXpM/tZhkEYIfiB0AnEmLVSN5PfmQ1EgYuF5QwCLcBGAs/s1600/prabha.jpg") ;
         background-position: center;
         background-repeat: no-repeat;
-        transition:2s;
+        transition:3s;
         background-size: cover;
     `; 
     adver1.style.width="8px"
@@ -52,11 +55,7 @@ function h()
     count++;
 
 }
-function clsadv()
-{
-    let cls=document.querySelector(".new");
-    cls.style.display="none";
-}
+
 function h1()
 {
     if(count%2!=0){
@@ -84,17 +83,29 @@ adver1.style.width="2px"
 }
 count++;
     }
-    function startIntervals() {
+      window.onload = function() {
+        
+        setTimeout(function() {
 
-        if (count % 2 === 0) {
-          setInterval(h1, 5000);
-        } else {
-          setInterval(h, 5000);
-          console.log("hii");
-        }
+            cls.style.display="flex";
 
-        count++;
-      }
-      
-      // Call startIntervals function, or use it within a loop or other logic as needed
-      startIntervals();
+        }, 12000); 
+    };
+    function clsadv()
+{
+    
+    cls.style.display="none";
+}
+function startIntervals() {
+
+    if (count % 2 === 0) {
+      setInterval(h1, 5000);
+    } else {
+      setInterval(h, 5000);
+      console.log("hii");
+    }
+
+    count++;
+  }
+
+  startIntervals();
